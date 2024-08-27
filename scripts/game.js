@@ -1,3 +1,13 @@
+import confetti from 'canvas-confetti';
+
+function triggerConfetti() {
+	confetti ({
+		particleCount: 100,
+		spread: 70,
+		origin: { y: 0.6}
+	});
+}
+
 let board = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
 let gameActive = true;
@@ -58,7 +68,8 @@ function checkResult() {
   }
 
   if (roundWon) {
-    statusMessage.innerText = `Player ${currentPlayer} has won!`;
+    statusMessage.innerText = `🎉 Player ${currentPlayer} has won! 🎉`;
+    triggerConfetti();
     gameActive = false;
     return;
   }

@@ -1,0 +1,29 @@
+{
+  "name": "tic-tac-toe-frontend",
+  "version": "1.0.0",
+  "description": "This is a readme file that outlines our frontend.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ndevu12/tic-tac-toe-frontend.git"
+  },
+  "keywords": [],
+  "author": "2012Inga <Inganathi2001@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ndevu12/tic-tac-toe-frontend/issues"
+  },
+  "homepage": "https://github.com/Ndevu12/tic-tac-toe-frontend#readme",
+  "dependencies": {
+    "canvas-confetti": "^1.9.3"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2"
+  }
+}
