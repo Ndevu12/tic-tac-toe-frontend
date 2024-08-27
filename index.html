@@ -10,11 +10,23 @@
   <div class="container">
     <h1>Tic Tac Toe</h1>
 
+    <!-- Game Mode Buttons -->
     <div class="game-mode">
       <button class="mode-button" onclick="startGame('single')">Single Player</button>
       <button class="mode-button" onclick="startGame('multi')">Multiplayer</button>
     </div>
 
+    <!-- Scoreboard -->
+    <div class="score-board">
+      <div class="score">
+        <span id="playerx">Player X: 0</span>
+      </div>
+      <div class="score">
+        <span id="playero">Player O: 0</span>
+      </div>
+    </div>
+
+    <!-- Game Board -->
     <div class="game-board">
       <div class="cell" data-index="0"></div>
       <div class="cell" data-index="1"></div>
@@ -26,8 +38,11 @@
       <div class="cell" data-index="7"></div>
       <div class="cell" data-index="8"></div>
     </div>
-    
+
+    <!-- Status Message -->
     <div class="status-message"></div>
+
+    <!-- Reset Button -->
     <button class="reset-button" onclick="resetGame()">Restart Game</button>
   </div>
 
